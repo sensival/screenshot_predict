@@ -52,7 +52,7 @@ Data Labeling by: Internal medicine R2 at SNUH
 
 ## ✏️ Development Details
 
-# Directory setting
+### Directory setting
 The project's data directory is organized as follows:
 - **pneumonia/**
   - **train/**
@@ -89,15 +89,15 @@ The project's data directory is organized as follows:
 <hr/>
 
 
-# Train/Validation code
+### Train/Validation code
 
 
 
-# Test code
+### Test code
 
 
 
-# GUI
+### GUI
 
 
 # Result
