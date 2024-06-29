@@ -212,12 +212,24 @@ plt.savefig(output_directory+'/confusion_matrix_-------.png')
 [Refer to the source code](https://github.com/sensival/screenshot_predict/blob/main/xr_predict.py)<br>
 
 ### Result
-#### Pneumonia
+#### Train/Validation
+##### Pneumonia
 <img width="500" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/69e3fbc0-192a-4975-aa2d-d2f0b057ed0c"><br>
 
 Due to the small size of the validation dataset, it was difficult to determine the point of overfitting, so it was trained for an additional 100 epochs.<br>
-<img width="500" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/9ce6e541-4732-4de5-933b-c9e8fefeffec"><br>
+<img width="500" alt="pmn tr2" src="https://github.com/sensival/screenshot_predict/assets/136985426/9ce6e541-4732-4de5-933b-c9e8fefeffec"><br>
 The validation results are still unstable. It needs to increase the size of the validation dataset in the future<br>
 
+##### Pneumothorax
+<img width="500" alt="pnx tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/4016dbf1-1370-4632-b25c-2d5d9ea7f2be"><br>
+
+##### Ileus
+
+##### Pneumoperitoneum
+
+#### Test
+##### Pneumonia
+<img width="600" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/4687a1da-81fb-4f4c-9814-4f9922430db3"><br>
+<img width="600" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/d1ad3a79-3bb5-4af3-803b-f08e294fb48d"><br>
 <br/>
 <hr/>
