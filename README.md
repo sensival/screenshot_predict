@@ -83,8 +83,8 @@ The project's data directory is organized as follows:
     - **NORMAL/**
 - **pnperi/** 
   - **train/**
-    - **FREEAIR/**
-    - **NORMAL/**  *'free air' : Pneumoperitoneum findings
+    - **FREEAIR/** *'free air' : Pneumoperitoneum findings
+    - **NORMAL/**  
   - **test/**
     - **FREEAIR/**
     - **NORMAL/**
@@ -93,7 +93,7 @@ The project's data directory is organized as follows:
 
 ### Train/Validation code
 
-#### Pneumonia
+#### 1. Pneumonia
 
 ```python
 model.train(data=dataset_directory, 
@@ -104,7 +104,7 @@ model.train(data=dataset_directory,
             save=True)
 ```
 
-#### Pneumothorax
+#### 2. Pneumothorax
 ```python
 model.train(data=dataset_directory, 
             epochs=100, 
@@ -114,9 +114,9 @@ model.train(data=dataset_directory,
             save=True,
             split=0.1) # validation data가 따로 없어서 split
 ```
-#### Ileus/Pneumoperitoneum(k-fold)
+#### 3. Ileus/Pneumoperitoneum(k-fold)
 ```python
-# ------- : ILEUS or FRESSAIR
+# ------- : ILEUS or FREEAIR
 k = 10
 kf = KFold(n_splits=k)
 
@@ -213,23 +213,40 @@ plt.savefig(output_directory+'/confusion_matrix_-------.png')
 
 ### Result
 #### Train/Validation
-##### Pneumonia
+##### 1. Pneumonia
 <img width="500" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/69e3fbc0-192a-4975-aa2d-d2f0b057ed0c"><br>
 
 Due to the small size of the validation dataset, it was difficult to determine the point of overfitting, so it was trained for an additional 100 epochs.<br>
 <img width="500" alt="pmn tr2" src="https://github.com/sensival/screenshot_predict/assets/136985426/9ce6e541-4732-4de5-933b-c9e8fefeffec"><br>
 The validation results are still unstable. It needs to increase the size of the validation dataset in the future<br>
 
-##### Pneumothorax
+##### 2. Pneumothorax
 <img width="500" alt="pnx tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/4016dbf1-1370-4632-b25c-2d5d9ea7f2be"><br>
 
-##### Ileus
-
-##### Pneumoperitoneum
+##### 3. Ileus/Pneumoperitoneum(the fold with the best test results among the 10 folds)
+Ileus: fold 7<br>
+<img width="500" alt="il tr" src="https://github.com/sensival/algorithm_practice/assets/136985426/005e21f9-5b00-40a3-a26d-aef60182282e"><br>
+Pneumoperitoneum: fold 6<br>
+<img width="500" alt="pnp tr" src="https://github.com/sensival/algorithm_practice/assets/136985426/8f2a3b25-741f-4987-bd45-ee0e6fbcd22c"><br>
+This 2 models also have unstable train/validation loss due to the insufficient size of the train dataset.<br>
 
 #### Test
-##### Pneumonia
-<img width="600" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/4687a1da-81fb-4f4c-9814-4f9922430db3"><br>
-<img width="600" alt="pmn tr" src="https://github.com/sensival/screenshot_predict/assets/136985426/d1ad3a79-3bb5-4af3-803b-f08e294fb48d"><br>
+##### 1. Pneumonia
+<img width="550" alt="pmn tt" src="https://github.com/sensival/screenshot_predict/assets/136985426/4687a1da-81fb-4f4c-9814-4f9922430db3"><br>
+<img width="450" alt="pmn tt" src="https://github.com/sensival/screenshot_predict/assets/136985426/d1ad3a79-3bb5-4af3-803b-f08e294fb48d"><br>
+
+##### 2. Pneumothorax
+<img width="550" alt="pnx tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/72ce402c-ee37-4ee7-a201-a8ef2877c4d3"><br>
+<img width="450" alt="pnx tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/30668c92-37a8-4108-9f05-ce318e3136b7"><br>
+
+
+##### 3. Ileus(fold 7)
+<img width="550" alt="il tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/7dc8362d-5db1-428a-ae9a-fc6f510a743e"><br>
+<img width="450" alt="il tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/ffde15ad-90fb-4e1d-8cc7-c68051eef1d8
+
+##### 4. Pneumoperitoneum(fold 6)
+<img width="550" alt="pp tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/b71dc642-a3d3-4cb6-ac84-49be8a2d1d1e"><br>
+<img width="450" alt="pp tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/d1e3082f-ff95-4e7f-884d-856b9ca44213"><br>
+
 <br/>
 <hr/>
