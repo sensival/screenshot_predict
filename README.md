@@ -242,7 +242,7 @@ This 2 models also have unstable train/validation loss due to the insufficient s
 
 ##### 3. Ileus(fold 7)
 <img width="550" alt="il tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/7dc8362d-5db1-428a-ae9a-fc6f510a743e"><br>
-<img width="450" alt="il tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/ffde15ad-90fb-4e1d-8cc7-c68051eef1d8
+<img width="450" alt="il tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/ffde15ad-90fb-4e1d-8cc7-c68051eef1d8"><br>
 
 ##### 4. Pneumoperitoneum(fold 6)
 <img width="550" alt="pp tt" src="https://github.com/sensival/algorithm_practice/assets/136985426/b71dc642-a3d3-4cb6-ac84-49be8a2d1d1e"><br>
