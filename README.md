@@ -37,9 +37,9 @@ Data Labeling by: Internal medicine R2 at SNUH
 
 |  | Pneumonia | Pneumothorax | Ileus | Pneumothorax |
 | :-: |  :-: | :-: | :-: | :-: |
-| Train | Disease: 3875 images <br> Normal: 1341  | Disease: 2379 images <br> Normal: 8296<br>  |  Disease: 51 images <br> Normal: 138<br> | Disease: 25 images <br> Normal: 188<br> |
-| Validation | Disease: 8 images <br> Normal: 8  | The train data was divided(0.1)|  K-fold-cross-validation(k=10) | K-fold-cross-validation(k=10) |
-| Test | Disease: 390 images <br> Normal: 234  | Disease: 390 images <br> Normal: 234|  Disease: 16 images <br> Normal: 11 | Disease: 5 images <br> Normal: 11 |
+| Train | Disease: 3875 images <br> Normal: 1341 images | Disease: 2379 images <br> Normal: 8296 images<br>  |  Disease: 51 images <br> Normal: 138 images <br> | Disease: 25 images <br> Normal: 188 images <br> |
+| Validation | Disease: 8 images <br> Normal: 8 images | The train data was divided(0.1)|  K-fold-cross-validation(k=10) | K-fold-cross-validation(k=10) |
+| Test | Disease: 390 images <br> Normal: 234 images | Disease: 390 images <br> Normal: 234 images|  Disease: 16 images <br> Normal: 11 images | Disease: 5 images <br> Normal: 11 images |
 
 <hr>
 
