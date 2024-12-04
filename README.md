@@ -10,8 +10,7 @@
 
 ## 💌 Contributor
 
-Development by: [@sensival](https://github.com/sensival/)<br>
-Data Labeling by: Internal medicine R2 at SNUH
+**`Sole contributer`**
 
 <hr>
 
